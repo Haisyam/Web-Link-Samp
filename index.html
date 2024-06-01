@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Nama Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid mt-3">
+      <div class="container text-center">
+        <h1 class="display-4">Nama Store</h1>
+        <p class="lead">IP : 204.10.192.68:7008</p>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2 col-6 col-md-4 mx-auto mb-5">
+      <button id="btn-1" class="btn btn-primary" type="button">PLAY</button>
+      <button id="btn-2" class="btn btn-primary" type="button">
+        BREAK RULES
+      </button>
+      <button id="btn-3" class="btn btn-primary" type="button">UNBAN</button>
+      <button id="btn-4" class="btn btn-primary" type="button">
+        WHITELIST
+      </button>
+      <button id="btn-5" class="btn btn-primary" type="button">TOP UP</button>
+      <button id="btn-6" class="btn btn-primary" type="button">
+        SARAN UPDATE
+      </button>
+      <button id="btn-7" class="btn btn-primary" type="button">WHATSAPP</button>
+      <button id="btn-8" class="btn btn-primary" type="button">STORE</button>
+      <button id="btn-9" class="btn btn-primary" type="button">
+        POSTINGAN WARGA
+      </button>
+      <button id="btn-10" class="btn btn-primary" type="button">
+        LAMARAN FRAKSI
+      </button>
+      <button id="btn-11" class="btn btn-primary" type="button">BOOMBOX</button>
+      <button id="btn-12" class="btn btn-primary" type="button">
+        MANCING PERKORO
+      </button>
+    </div>
+
+    <script>
+      document.getElementById("btn-1").addEventListener("click", function () {
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher";
+      });
+      document.getElementById("btn-2").addEventListener("click", function () {
+        window.location.href =
+          "https://m.kaskus.co.id/thread/60382e695070b435ca13648f/arti-dan-penjelasan-break-rules-gta-samp";
+      });
+      document.getElementById("btn-3").addEventListener("click", function () {
+        window.location.href = "page/unband.html";
+      });
+      document.getElementById("btn-4").addEventListener("click", function () {
+        window.location.href = "page/whitelist.html";
+      });
+      document.getElementById("btn-5").addEventListener("click", function () {
+        window.location.href = "page/topup.html";
+      });
+      document.getElementById("btn-6").addEventListener("click", function () {
+        window.location.href = "page/saran.html";
+      });
+      document.getElementById("btn-7").addEventListener("click", function () {
+        window.location.href = "https://www.example3.com";
+      });
+      document.getElementById("btn-8").addEventListener("click", function () {
+        window.location.href = "page/store.html";
+      });
+      document.getElementById("btn-9").addEventListener("click", function () {
+        window.location.href = "https://www.example3.com";
+      });
+      document.getElementById("btn-10").addEventListener("click", function () {
+        window.location.href = "https://www.example3.com";
+      });
+      document.getElementById("btn-11").addEventListener("click", function () {
+        window.location.href = "https://www.example3.com";
+      });
+      document.getElementById("btn-12").addEventListener("click", function () {
+        window.location.href = "https://www.example3.com";
+      });
+
+      function copyText() {
+        var textToCopy = "146.190.81.83:7008";
+        var textTo = " ‏‏";
+        navigator.clipboard.writeText(textToCopy);
+        alert("IP : 103.42.116.218:7002" + textTo);
+      }
+
+      function showAlert() {
+        alert("kirimkan nama ic kamu ke admin yang sedang open wl");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

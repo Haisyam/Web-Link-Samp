@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="showAlert()">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Nama Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container" style="width: 500px">
+        <div class="card mt-5">
+          <div class="card-body">
+            <div class="card-title text-center mb-3">
+              <h3>Masukan Player Name</h3>
+            </div>
+            <form action="" method="post" onsubmit="return submitForm()">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >NAMA IC:</label
+                >
+                <input
+                  id="nama"
+                  name="nama"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Mau Pesen Paket Apa:</label
+                >
+                <input
+                  id="pesan"
+                  name="pesan"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mt-3">
+                <button type="submit" class="btn btn-primary">BAYAR</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-5">
+      <div class="container" style="width: 500px">
+        <div class="jumbotron jumbotron-fluid mb-3">
+          <div class="container text-center">
+            <h5 class="display-4">Menu Paket Top Up</h5>
+          </div>
+        </div>
+        <div class="card mx-auto mb-3" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">PAKET HEMAT (Rp 10.000)</h5>
+            <p class="card-text">Benefit:</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">•Uang ic 200 juta</li>
+            <li class="list-group-item">•Level +5</li>
+            <li class="list-group-item">•Rubel +100</li>
+          </ul>
+        </div>
+        <div class="card mx-auto mb-3" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">PAKET LOW (Rp 20.000)</h5>
+            <p class="card-text">Benefit:</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">• Uang ic 250 juta</li>
+            <li class="list-group-item">• Level +7</li>
+            <li class="list-group-item">• Rubel +500</li>
+          </ul>
+        </div>
+        <div class="card mx-auto mb-3" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">PAKET MEDIUM (Rp 30.000)</h5>
+            <p class="card-text">Benefit:</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">• Uang ic 300 juta</li>
+            <li class="list-group-item">• Level +10</li>
+            <li class="list-group-item">• Rubel +1000</li>
+            <li class="list-group-item">• Skin import bebas pilih</li>
+            <li class="list-group-item">• Kendaraan import bebas pilih</li>
+          </ul>
+        </div>
+        <div class="card mx-auto mb-5" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">PAKET HIGH (Rp 40.000)</h5>
+            <p class="card-text">Benefit:</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">•Uang ic 500 juta</li>
+            <li class="list-group-item">•Level +15</li>
+            <li class="list-group-item">•Rubel +2000</li>
+            <li class="list-group-item">• Skin import bebas pilih</li>
+            <li class="list-group-item">• 2 Kendaraan import bebas pili</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showAlert() {
+        alert(
+          "Silahkan masukkan nama ic kamu di bagian nama ic contohnya Jokowi, lalu masukkan nama paket yang ingin kamu pesan. Jika kamu ingin memesan paket hemat maka ketik paket hemat."
+        );
+      }
+
+      function submitForm() {
+        var nama = document.getElementById("nama").value;
+        var citaCita = document.getElementById("pesan").value;
+
+        var link =
+          "https://api.whatsapp.com/send?phone=6289510193409&text=TOPUP MIN ++NAMA+IC+SAYA:*" +
+          nama +
+          "* .SAYA MAU MEMESAN *" +
+          pesan +
+          "" +
+          "*!";
+        window.location = link;
+
+        return false;
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
