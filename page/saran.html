@@ -84,10 +84,12 @@
         var nama = document.getElementById("saran").value;
         var link =
           "https://api.whatsapp.com/send?phone=6289510193409&text=SARAN+UPDATE:+" +
-          nama.toLowerCase() +
+          nama +
           "";
 
-        window.location.href = link;
+        window.location = link;
+
+        return false;
       }
     </script>
     <script
